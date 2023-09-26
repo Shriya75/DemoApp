@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graphs"
+    app:startDestination="@id/fragment_1">
+
+    <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.farmwiseai.demoapp.fragment_1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" />
+    <fragment
+        android:id="@+id/fragment_2"
+        android:name="com.farmwiseai.demoapp.fragment_2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment_1_to_fragment_2"
+            app:destination="@id/fragment_1"
+            app:popUpTo="@id/fragment_1" />
+    </fragment>
+</navigation>
