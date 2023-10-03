@@ -23,7 +23,7 @@ class fragment_1 : Fragment() {
 
         // handle the navigate button to navigate to the fragment 2
         navigateButton.setOnClickListener {
-            val actionId = R.id.fragment_2 // Replace with the ID of fragment_2 in your navigation graph
+            val actionId = R.id.fragment_2 // Replace with the ID of fragment_2.java in your navigation graph
             findNavController().navigate(actionId)
         }
 

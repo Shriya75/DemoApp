@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="startblue">#FF0000</color>
+    <color name="endblue">#00FF00</color>
+    <color name="graylight">#CCCCCC</color>
+    <color name="headings">#3F51B5</color>
+    <color name="grey">#468D8F73</color>
+    <color name="followersBg">#03A9F4</color>
+    <color name="followingBg">#03A9F4</color>
+
+
+
 </resources>

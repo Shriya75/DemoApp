@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="city_names">
+    <item>Bengaluru</item>
+    <item>Dharwad</item>
+    <item>Hubli</item>
+    <item>Chennai</item>
+    <item>Hosur</item>
+    <item>Coimbatore</item>
+    <!-- Add more city names as needed -->
+</array>
+    </resources>

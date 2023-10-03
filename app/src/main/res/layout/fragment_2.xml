@@ -7,11 +7,146 @@
     tools:context=".fragment_2"
     tools:ignore="HardcodedText">
 
+    <!-- Text view for heading -->
     <TextView
-        style="@style/TextAppearance.MaterialComponents.Headline6"
-        android:layout_width="wrap_content"
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="This is Fragment 2" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Welcome! Please fill the Registration Form"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Edit text for user name -->
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idTVHeader"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Username"
+        android:inputType="textEmailAddress" />
+
+    <!-- Edit text for Father's name -->
+    <EditText
+        android:id="@+id/idEdtFathersName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idEdtUserName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Father's Name"
+        android:inputType="textEmailAddress" />
+
+    <!-- Heading for Gender -->
+    <TextView
+        android:id="@+id/idTVGenderHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdtFathersName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Radio group for gender -->
+    <RadioGroup
+        android:id="@+id/idRadioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTVGenderHeading"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp">
+
+        <RadioButton
+            android:id="@+id/idRadioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/idRadioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/idRadioButtonOther"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Other" />
+
+    </RadioGroup>
+
+    <!-- Edit text for Phone Number -->
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idRadioGroupGender"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Phone Number"
+        android:inputType="textEmailAddress" />
+
+    <!-- Dropdown for city -->
+    <Spinner
+        android:id="@+id/idSpinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idEdtPhoneNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <!-- Add a hint for the Spinner (Dropdown) -->
+
+    <!-- Edit text for state -->
+
+    <EditText
+        android:id="@+id/idEdtState"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/idSpinnerCity"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter State"
+        android:inputType="textEmailAddress" />
+
+<!--    &lt;!&ndash; Edit text for pincode &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/idEdtPincode"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_below="@+id/idEdtState"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:hint="Enter Pincode"-->
+<!--        android:inputType="textEmailAddress" />-->
+
+    <!-- Button to register our new user -->
+    <Button
+        android:id="@+id/idBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdtState"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Register User"
+        android:textAllCaps="false" />
 
 </RelativeLayout>
